@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-2ee797d3-3a3c-484e-8d7b-f9d780750622</UserSecretsId>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5"/>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.5" />
+
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.5"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\API.DTO\API.DTO.csproj" />
+      <ProjectReference Include="..\DAL\DAL.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Ticket\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Prize\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Prize\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Prize\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Prize\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Prize\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lottery\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lottery\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lottery\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lottery\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lottery\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Alias\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Alias\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Alias\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Alias\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Alias\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Activity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Activity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Activity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Activity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Activity\Index.cshtml" />
+    </ItemGroup>
+
+</Project>
