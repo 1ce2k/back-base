@@ -18,6 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using WebApp;
+using WebApp.BackGround;
 using WebApp.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -140,6 +141,10 @@ apiVersioningBuilder.AddApiExplorer(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerConf>();
 builder.Services.AddSwaggerGen();
+
+
+// to add a background task for doing smth
+builder.Services.AddHostedService<BackGroundTask>();
 
 // ===============================================================
 var app = builder.Build();
